@@ -13,7 +13,8 @@
 /out/
 
 # next.js config
-next.config.js
+# assumes no changes are made using: git update-index --assume-unchanged path/to/your/file
+# if changes are made, use: git update-index --no-assume-unchanged path/to/your/file
 
 # production
 /build
