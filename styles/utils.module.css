@@ -9,7 +9,7 @@
   .headingXl {
     font-size: 2rem;
     line-height: 1.3;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
   }
@@ -18,11 +18,13 @@
     font-size: 1.5rem;
     line-height: 1.4;
     margin: 1rem 0;
+    
   }
   
   .headingMd {
     font-size: 1.2rem;
     line-height: 1.5;
+    
   }
   
   .borderCircle {
@@ -49,4 +51,20 @@
   
   .lightText {
     color: #666;
+  }
+
+  /* utils.module.css */
+
+  .lightSec {
+    background-color: rgba(253, 253, 253, 0.815); /* or any color you want */
+    width: 100vw; /* viewport width */
+    margin-left: calc(-50vw + 50%); /* center the element */
+    padding: 3em; /* add some padding if needed */
+    color: #333;
+  }
+
+/* rest of your CSS */
+
+  .centre {
+    text-align: center;
   }
