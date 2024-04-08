@@ -3,7 +3,7 @@ name: publish-to-github-pages
 on:
   push:
     branches:
-      - github-actions-test
+      - main
 
 permissions:
   contents: read
