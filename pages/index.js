@@ -29,6 +29,9 @@ export default function Home({ allPostsData}) {
         <p>I am an eager to learn, analytical and determined aspiring Software Engineer with a strong interest in Data Science & Machine Learning currently studying towards an integrated Masters in Informatics at the University of Edinburgh. </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={`${utilStyles.headingLg} ${utilStyles.centre}`}>Portfolio</h2>
+      </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.lightSec}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
@@ -41,6 +44,9 @@ export default function Home({ allPostsData}) {
           </li>
           ))}
         </ul>
+      </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={`${utilStyles.headingLg} ${utilStyles.centre}`}>Experience</h2>
       </section>
     </Layout>
   );
