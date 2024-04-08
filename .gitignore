@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# next.js config
+next.config.js
+
 # production
 /build
 
@@ -28,3 +31,4 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+next.config.js
