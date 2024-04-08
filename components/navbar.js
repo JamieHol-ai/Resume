@@ -1,6 +1,6 @@
 // components/Navbar.js
 import Link from 'next/link';
-import styles from './Navbar.module.css'; // import CSS module
+import styles from './navbar.module.css'; // import CSS module
 
 export default function Navbar({name}) {
   return (
