@@ -1,0 +1,18 @@
+/* components/Navbar.module.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: sticky;
+  }
+  
+  .name {
+    color: white;
+  }
+  
+  .links a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+  }
