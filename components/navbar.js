@@ -1,6 +1,6 @@
 // components/Navbar.js
 import Link from 'next/link';
-import styles from './Navbar.module.css'; // import CSS module
+import styles from './navbar.module.css'; // import CSS module
 
 export default function Navbar({name}) {
   return (
@@ -8,7 +8,7 @@ export default function Navbar({name}) {
       <div className={styles.name}>{name}</div>
       <div className={styles.links}>
         <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
+        <Link href="/resume">Resume</Link>
       </div>
     </nav>
   );
