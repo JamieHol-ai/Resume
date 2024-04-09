@@ -66,6 +66,12 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a 3D effect */
     border-radius: 10px; /* Optional: Round the corners */
   }
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .lightText {
     color: #666;

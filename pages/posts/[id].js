@@ -35,7 +35,9 @@ export default function Post({ postData }) {
           <div className={utilStyles.lightText}>
             <Date dateString={postData.date} />
           </div>
-          <Image src={postData.image} alt={postData.title} width={200} height={200} />
+          <div className={utilStyles.imageContainer}>
+            <Image src={postData.image} alt={postData.title} width={500} height={500} />
+          </div>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>
       </Layout>
