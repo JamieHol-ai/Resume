@@ -46,7 +46,7 @@ export default function Home({allPostsData, timelineData}) {
                 <Date dateString={date} />
               </small>
               <div className={utilStyles.imageContainer}>
-                <Image src={image} alt={title} width={200} height={200} />
+                {image && image !== '' && <Image src={image} alt={title} width={200} height={200} />}
               </div>
             </li>
           ))}
