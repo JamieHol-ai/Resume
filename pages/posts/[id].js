@@ -3,6 +3,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.css';
+import Image from 'next/image';
 
 export async function getStaticProps({ params }) {
     // Add the "await" keyword like this:
@@ -34,6 +35,7 @@ export default function Post({ postData }) {
           <div className={utilStyles.lightText}>
             <Date dateString={postData.date} />
           </div>
+          <Image src={postData.image} alt={postData.title} width={200} height={200} />
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>
       </Layout>

@@ -3,6 +3,7 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Date from '../components/date';
+import Image from 'next/image';
 
 import { getSortedPostsData } from '../lib/posts';
 
@@ -33,13 +34,14 @@ export default function Home({ allPostsData}) {
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.lightSec}`}>
         <ul className={utilStyles.horizontalList}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title, image }) => (
             <li className={utilStyles.horizontalListItem} key={id}>
               <Link href={`/posts/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
               </small>
+              <Image src={image} alt={title} width={200} height={200} />
             </li>
           ))}
         </ul>
