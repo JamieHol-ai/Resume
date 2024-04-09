@@ -4,6 +4,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Navbar from './navbar';
+import Footer from './footer';
 
 const name = 'Jamie Holroyde';
 export const siteTitle = "Jamie Holroyde's Portfolio";
@@ -66,6 +67,7 @@ export default function Layout({ children, home }) {
           <Link href="/">← Back to home</Link>
         </div>
       )}
+      <Footer />
     </div>
   );
 }
