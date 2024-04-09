@@ -5,14 +5,14 @@ export default function Resume() {
   return (
     <Layout>
       <iframe 
-        src="/resume/public/resume.pdf" 
+        src="/resume.pdf" 
         style={{width:'100%', height:'800px'}} 
         frameborder="0" 
         allowFullScreen
       />
       <p>
         If you cannot view the file, please download it: 
-        <a href="/resume/public/resume.pdf">Download PDF</a>
+        <a href="/resume.pdf">Download PDF</a>
       </p>
     </Layout>
   );
