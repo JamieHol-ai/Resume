@@ -3,6 +3,7 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Date from '../components/date';
+import Timeline from '../components/timeline';
 import Image from 'next/image';
 
 import { getSortedPostsData } from '../lib/posts';
@@ -51,6 +52,7 @@ export default function Home({ allPostsData}) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={`${utilStyles.headingLg} ${utilStyles.centre}`}>Experience</h2>
       </section>
+    <Timeline />
     </Layout>
   );
 }
