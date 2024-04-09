@@ -5,7 +5,7 @@ export default function Resume() {
   return (
     <Layout>
       <iframe 
-        src="./resume.pdf" 
+        src="../resume.pdf" 
         style={{width:'100%', height:'800px'}} 
         frameborder="0" 
         allowFullScreen/>
