@@ -11,7 +11,7 @@ export default function Resume() {
         allowFullScreen/>
       <p>
         If you cannot view the file, please download it: 
-        <a href="./resume.pdf">Download PDF</a>
+        <a href="/resume/resume.pdf">Download PDF</a>
       </p>
     </Layout>
   );
