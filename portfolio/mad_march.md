@@ -1,7 +1,7 @@
 ---
 title: 'Mad March Entry'
-date: '2020-10-01'
+date: '2019-09-01'
 image: "/resume/images/march.jpeg"
 ---
 
-My entry for the Gold Crest Award. The aim of this project was to design and build an affordable 3D room scanner capable of scanning spaces within a 180-degree field of view. Feel free to visit the [respository](https://github.com/JamieHol-ai/3D-Room-Scanner/blob/main/) to see the code and the report.
+Winner of the Advanced section of Cromar Future Group's coding competition. I submitted three different mini-games, written in Python, and was given feedback that they would be suitable for commercialisation.

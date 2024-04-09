@@ -1,6 +1,6 @@
 ---
 title: 'Simulation of Planetary Orbits'
-date: '2019-11-17'
+date: '2018-11-17'
 image: "/resume/images/planetary_orbits.png"
 ---
 
