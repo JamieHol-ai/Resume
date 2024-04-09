@@ -1,0 +1,17 @@
+/* styles/footer.module.css */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.8rem;
+
+}
+
+.contactDetails {
+    margin-right: 20px;
+}
+
+.sourceCode {
+    align-self: flex-end;
+}
