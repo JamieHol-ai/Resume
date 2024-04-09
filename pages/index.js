@@ -32,15 +32,15 @@ export default function Home({ allPostsData}) {
         <h2 className={`${utilStyles.headingLg} ${utilStyles.centre}`}>Portfolio</h2>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.lightSec}`}>
-        <ul className={utilStyles.list}>
+        <ul className={utilStyles.horizontalList}>
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-            <Link href={`/posts/${id}`}>{title}</Link>
-            <br />
-            <small className={utilStyles.lightText}>
-              <Date dateString={date} />
-            </small>
-          </li>
+            <li className={utilStyles.horizontalListItem} key={id}>
+              <Link href={`/posts/${id}`}>{title}</Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
+            </li>
           ))}
         </ul>
       </section>
