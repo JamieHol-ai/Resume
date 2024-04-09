@@ -11,7 +11,7 @@ export default function Timeline({ timelineData }) {
             <h2>{title}</h2>
             <h3>From {startDate} to {endDate}</h3>
             <p>{description}</p>
-            <a href={url}>Read More</a>
+            {url && url !== '' && <a href={url}>Read more</a>}
           </div>
         </div>
       ))}
