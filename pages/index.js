@@ -41,7 +41,9 @@ export default function Home({ allPostsData}) {
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
               </small>
-              <Image src={image} alt={title} width={200} height={200} />
+              <div className={utilStyles.imageContainer}>
+                <Image src={image} alt={title} width={200} height={200} />
+              </div>
             </li>
           ))}
         </ul>
