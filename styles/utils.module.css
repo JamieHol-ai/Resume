@@ -56,7 +56,7 @@
   /* utils.module.css */
 
   .lightSec {
-    background-color: rgba(253, 253, 253, 0.815); /* or any color you want */
+    background-color: rgba(253, 253, 253, 0.884); /* or any color you want */
     width: 100vw; /* viewport width */
     margin-left: calc(-50vw + 50%); /* center the element */
     padding: 3em; /* add some padding if needed */

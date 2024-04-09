@@ -9,13 +9,12 @@ export default function Resume() {
     return (
         <Layout>
             <iframe 
-        src="resume.pdf" 
+        src="/resume.pdf" 
         style={{width:'100%', height:'800px'}} 
         frameborder="0" 
-        allowFullScreen
-      >
+        allowFullScreen>
         This browser does not support PDFs. Please download the PDF to view it: 
-        <a href="resume.pdf">Download PDF</a>
+        <a href="/resume.pdf">Download PDF</a>
       </iframe>
         </Layout>
     );
