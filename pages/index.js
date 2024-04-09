@@ -3,20 +3,24 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Date from '../components/date';
+import Timeline from '../components/timeline';
 import Image from 'next/image';
 
 import { getSortedPostsData } from '../lib/posts';
+import { getSortedTimelineData } from '../lib/timeline_items';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
+  const timelineData = getSortedTimelineData();
   return {
     props: {
       allPostsData,
+      timelineData,
     },
   };
 }
 
-export default function Home({ allPostsData}) {
+export default function Home({allPostsData, timelineData}) {
   return (
     <Layout home>
       <Head>
@@ -26,11 +30,11 @@ export default function Home({ allPostsData}) {
         <p>Student and Developer</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.lightSec}`}>
-        <h2 className={utilStyles.headingLg}>About Me</h2>
+        <p className={utilStyles.headingLg}>About Me</p>
         <p>I am an eager to learn, analytical and determined aspiring Software Engineer with a strong interest in Data Science & Machine Learning currently studying towards an integrated Masters in Informatics at the University of Edinburgh. </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={`${utilStyles.headingLg} ${utilStyles.centre}`}>Portfolio</h2>
+        <p className={`${utilStyles.headingLg} ${utilStyles.centre}`}>Portfolio</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.lightSec}`}>
         <ul className={utilStyles.horizontalList}>
@@ -49,8 +53,9 @@ export default function Home({ allPostsData}) {
         </ul>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={`${utilStyles.headingLg} ${utilStyles.centre}`}>Experience</h2>
+        <p className={`${utilStyles.headingLg} ${utilStyles.centre}`}>Experience</p>
       </section>
+      <Timeline timelineData={timelineData} />
     </Layout>
   );
 }
