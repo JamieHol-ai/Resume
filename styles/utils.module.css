@@ -48,6 +48,24 @@
   .listItem {
     margin: 0 0 1.25rem;
   }
+
+  .horizontalList {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .horizontalListItem {
+    margin: 0 1rem 1rem 0;
+    flex: 1 0 30%; /* This will make the items take up at least 30% of the container width */
+    border: 1px solid #333; /* Add a border */
+    padding: 1rem; /* Add some padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a 3D effect */
+    border-radius: 10px; /* Optional: Round the corners */
+  }
   
   .lightText {
     color: #666;
