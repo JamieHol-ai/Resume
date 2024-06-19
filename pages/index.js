@@ -10,7 +10,7 @@ import { getSortedPostsData } from '../lib/posts';
 import { getSortedTimelineData } from '../lib/timeline_items';
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allPostsData = await getSortedPostsData();
   const timelineData = getSortedTimelineData();
   return {
     props: {
